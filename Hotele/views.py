@@ -33,6 +33,7 @@ def home(request):
             hotele_obiekty = hotele_obiekty.order_by('cena')
         elif sortuj == 'DSC':
             hotele_obiekty = hotele_obiekty.order_by('-cena')
+            
 
     if szukaj:
         hotele_obiekty = hotele_obiekty.filter(
